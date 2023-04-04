@@ -4,14 +4,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 //Code to import Budget.js
 import Budget from './components/Budget';
+
+// Add code to import the other components here under
 import Remaining from './components/Remaining';
 import ExpenseTotal from './components/ExpenseTotal';
 
 import ExpenseList from './components/ExpenseList.js';
 import AllocationForm from './components/AllocationForm.js';
 
-// Add code to import the other components here under
-
+import CurrencySelector from './components/CurrencySelector.js';
 
 import { AppProvider } from './context/AppContext';
 const App = () => {
@@ -38,6 +39,13 @@ const App = () => {
                     //ExpenseTotal component
                     <div className='col-sm'>
                         <ExpenseTotal />
+                    </div>
+                    }        
+
+                    {
+                    //CurrencySelector component
+                    <div className='col-sm'>
+                        <CurrencySelector />
                     </div>
                     }        
 
